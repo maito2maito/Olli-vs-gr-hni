@@ -2,30 +2,19 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
-    public Transform[] targets; // Taulukko pelaajien transformeille
-    public float smoothSpeed = 0.125f; // Nopeus, jolla kamera liikkuu pelaajien per‰ss‰
-    public Vector3 offset; // Offset, joka m‰‰rittelee kameran et‰isyyden pelaajista
+    public Transform target; // Pelaajan Transform-komponentti, jonka kamera seuraa
+    public float smoothSpeed = 0.125f; // Kuinka pehme‰sti kamera seuraa pelaajaa
+    public Vector3 offset; // Lis‰ys pelaajan sijaintiin kameran sijainnin laskemiseksi
 
     void FixedUpdate()
     {
-        if (targets.Length == 0)
-            return;
-
-        Vector3 desiredPosition = GetCenterPoint() + offset; // Lasketaan pelaajien keskipiste ja lis‰t‰‰n offset
-        Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed); // Tasainen liike pelaajien per‰ss‰
-        transform.position = smoothedPosition; // P‰ivitet‰‰n kameran sijainti
-    }
-
-    Vector3 GetCenterPoint()
-    {
-        if (targets.Length == 1)
-            return targets[0].position;
-
-        Bounds bounds = new Bounds(targets[0].position, Vector3.zero);
-        for (int i = 0; i < targets.Length; i++)
+        if (target != null)
         {
-            bounds.Encapsulate(targets[i].position);
+            Vector3 desiredPosition = target.position + offset;
+            Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed);
+            transform.Translate(smoothedPosition - transform.position);
+
+            transform.LookAt(target); // Kamera katsoo pelaajaa
         }
-        return bounds.center;
     }
 }
