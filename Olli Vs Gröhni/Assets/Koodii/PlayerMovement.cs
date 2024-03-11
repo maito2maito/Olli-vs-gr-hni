@@ -7,8 +7,11 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float speed;
     private Rigidbody2D body;
 
+    Animator anim;
+
     private void Awake()
     {
+        anim = GetComponent<Animator>();
         body = GetComponent<Rigidbody2D>();
     }
 
@@ -21,6 +24,11 @@ public class PlayerMovement : MonoBehaviour
         {
             body.velocity = new Vector2(body.velocity.x,speed);
         }
+        anim.SetFloat("Velocity", body.velocity.magnitude);
 
+        if (Input.GetMouseButtonDown(0))
+        {
+            anim.Play("Punch");
+        }
     }
 }
