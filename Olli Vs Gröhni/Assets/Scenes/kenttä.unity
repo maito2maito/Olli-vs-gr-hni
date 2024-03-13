@@ -305,7 +305,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 217433152}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e0bb47afc640c7e44a5c3aa2ffc75001, type: 3}
   m_Name: 
@@ -348,6 +348,36 @@ MonoBehaviour:
   _health: 100
   isAlive: 1
   isInvincible: 0
+--- !u!114 &217433160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 217433152}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a025cff65131eb4aa18e4c5a5bd4d0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characters:
+  - {fileID: 217433152}
+  moveSpeed: 5
+  jumpForce: 10
+--- !u!114 &217433161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 217433152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92b37967fb546ae468b80c0bec386df0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
+  jumpForce: 10
 --- !u!1 &270644519
 GameObject:
   m_ObjectHideFlags: 0
@@ -673,6 +703,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4224068130354670737, guid: 5d3bb95cb991e2e4a84b272a9bdef4b7, type: 3}
       insertIndex: -1
       addedObject: {fileID: 217433158}
+    - targetCorrespondingSourceObject: {fileID: 4224068130354670737, guid: 5d3bb95cb991e2e4a84b272a9bdef4b7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 217433161}
+    - targetCorrespondingSourceObject: {fileID: 4224068130354670737, guid: 5d3bb95cb991e2e4a84b272a9bdef4b7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 217433160}
     - targetCorrespondingSourceObject: {fileID: 4224068130354670737, guid: 5d3bb95cb991e2e4a84b272a9bdef4b7, type: 3}
       insertIndex: -1
       addedObject: {fileID: 217433154}
@@ -1689,10 +1725,10 @@ PrefabInstance:
       addedObject: {fileID: 2119073461}
     - targetCorrespondingSourceObject: {fileID: 5388088979911193732, guid: b4c78f0bc38e5cd42884ab06ce525e98, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2119073459}
+      addedObject: {fileID: 2119073463}
     - targetCorrespondingSourceObject: {fileID: 5388088979911193732, guid: b4c78f0bc38e5cd42884ab06ce525e98, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2119073458}
+      addedObject: {fileID: 2119073459}
     - targetCorrespondingSourceObject: {fileID: 5388088979911193732, guid: b4c78f0bc38e5cd42884ab06ce525e98, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2119073457}
@@ -1785,19 +1821,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &2119073458
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2119073454}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0bb47afc640c7e44a5c3aa2ffc75001, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 10
 --- !u!114 &2119073459
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1805,7 +1828,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2119073454}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cfb1d27e0beb1af43b5e1ff5e95772bf, type: 3}
   m_Name: 
@@ -1865,6 +1888,21 @@ MonoBehaviour:
   maxHealth: 100
   currentHealth: 0
   healthBar: {fileID: 1280035633}
+--- !u!114 &2119073463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2119073454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16ba8c2922226a0459fd21c73dbe5b15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  horizontalAxisName: 
+  verticalAxisName: 
+  moveSpeed: 5
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
