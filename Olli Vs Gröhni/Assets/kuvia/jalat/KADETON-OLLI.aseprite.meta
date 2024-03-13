@@ -121,7 +121,7 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: KADETON-OLLI
     originalName: 
-    pivot: {x: 0.58333325, y: -0.4871795}
+    pivot: {x: 0.5512463, y: 0.024568884}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:

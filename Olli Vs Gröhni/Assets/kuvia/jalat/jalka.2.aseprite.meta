@@ -121,7 +121,7 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: jalka.2
     originalName: 
-    pivot: {x: 0.4333333, y: -0.32692307}
+    pivot: {x: 0.7500582, y: 0.9725667}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:

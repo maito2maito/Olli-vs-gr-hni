@@ -121,7 +121,7 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: kasi.3
     originalName: 
-    pivot: {x: 0.5806452, y: -0.7857143}
+    pivot: {x: -0.0045084953, y: 0.15074666}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:

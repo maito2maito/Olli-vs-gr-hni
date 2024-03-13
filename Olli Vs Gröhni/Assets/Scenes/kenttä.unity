@@ -619,6 +619,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 558023957794595109, guid: 5d3bb95cb991e2e4a84b272a9bdef4b7, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1784012675955440961, guid: 5d3bb95cb991e2e4a84b272a9bdef4b7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.87
@@ -659,9 +663,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2098011580673827219, guid: 5d3bb95cb991e2e4a84b272a9bdef4b7, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2238145447991006847, guid: 5d3bb95cb991e2e4a84b272a9bdef4b7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.09034713
+      objectReference: {fileID: 0}
+    - target: {fileID: 2238145447991006847, guid: 5d3bb95cb991e2e4a84b272a9bdef4b7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.114927
+      objectReference: {fileID: 0}
+    - target: {fileID: 2412718920148018025, guid: 5d3bb95cb991e2e4a84b272a9bdef4b7, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 4224068130354670737, guid: 5d3bb95cb991e2e4a84b272a9bdef4b7, type: 3}
       propertyPath: m_Name
       value: jahni
+      objectReference: {fileID: 0}
+    - target: {fileID: 7741016984525983321, guid: 5d3bb95cb991e2e4a84b272a9bdef4b7, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1524,6 +1548,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 461494096008572210, guid: b4c78f0bc38e5cd42884ab06ce525e98, type: 3}
+      propertyPath: m_Name
+      value: kasi.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 461494096008572210, guid: b4c78f0bc38e5cd42884ab06ce525e98, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -1792,7 +1820,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2119073454}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e0bb47afc640c7e44a5c3aa2ffc75001, type: 3}
   m_Name: 
